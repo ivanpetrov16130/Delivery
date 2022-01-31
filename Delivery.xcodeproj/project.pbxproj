@@ -11,6 +11,8 @@
 		4789711327A80F2A00CF37C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789711227A80F2A00CF37C8 /* ContentView.swift */; };
 		4789711527A80F2B00CF37C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789711427A80F2B00CF37C8 /* Assets.xcassets */; };
 		4789711827A80F2B00CF37C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789711727A80F2B00CF37C8 /* Preview Assets.xcassets */; };
+		4789712327A8146F00CF37C8 /* DeliveryCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4789712227A8146F00CF37C8 /* DeliveryCore */; };
+		4789712527A8146F00CF37C8 /* DeliverySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4789712427A8146F00CF37C8 /* DeliverySDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4789711227A80F2A00CF37C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4789711427A80F2B00CF37C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4789711727A80F2B00CF37C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4789711F27A813DC00CF37C8 /* DeliveryCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DeliveryCore; sourceTree = "<group>"; };
+		4789712027A8141B00CF37C8 /* DeliverySDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DeliverySDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4789712327A8146F00CF37C8 /* DeliveryCore in Frameworks */,
+				4789712527A8146F00CF37C8 /* DeliverySDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +41,10 @@
 		4789710427A80F2A00CF37C8 = {
 			isa = PBXGroup;
 			children = (
+				4789711E27A813DC00CF37C8 /* Packages */,
 				4789710F27A80F2A00CF37C8 /* Delivery */,
 				4789710E27A80F2A00CF37C8 /* Products */,
+				4789712127A8146F00CF37C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +75,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4789711E27A813DC00CF37C8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4789711F27A813DC00CF37C8 /* DeliveryCore */,
+				4789712027A8141B00CF37C8 /* DeliverySDK */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4789712127A8146F00CF37C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = Delivery;
+			packageProductDependencies = (
+				4789712227A8146F00CF37C8 /* DeliveryCore */,
+				4789712427A8146F00CF37C8 /* DeliverySDK */,
+			);
 			productName = Delivery;
 			productReference = 4789710D27A80F2A00CF37C8 /* Delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -269,7 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Delivery/Preview Content\"";
-				DEVELOPMENT_TEAM = 98ZAJVB2CY;
+				DEVELOPMENT_TEAM = X997L5AS63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -298,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Delivery/Preview Content\"";
-				DEVELOPMENT_TEAM = 98ZAJVB2CY;
+				DEVELOPMENT_TEAM = X997L5AS63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,6 +369,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4789712227A8146F00CF37C8 /* DeliveryCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeliveryCore;
+		};
+		4789712427A8146F00CF37C8 /* DeliverySDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeliverySDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4789710527A80F2A00CF37C8 /* Project object */;
 }

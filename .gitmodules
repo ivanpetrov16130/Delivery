@@ -1,0 +1,6 @@
+[submodule "DeliveryCore"]
+	path = DeliveryCore
+	url = https://github.com/ivanpetrov16130/DeliveryCore
+[submodule "DeliverySDK"]
+	path = DeliverySDK
+	url = https://github.com/ivanpetrov16130/DeliverySDK
